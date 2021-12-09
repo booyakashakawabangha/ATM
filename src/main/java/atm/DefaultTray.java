@@ -9,7 +9,7 @@ public abstract class DefaultTray implements Tray{
     }
 
     public void process (int amount){
-        System.out.println("Extracted " + amount / bill + " bills with nominal of " + bill);
+        System.out.println("Extracted " + amount / bill + " bills with nominal of " + bill + ".");
         if (nextTray != null){
             nextTray.process(amount % bill);
         }
